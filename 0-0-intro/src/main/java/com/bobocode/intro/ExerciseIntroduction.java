@@ -2,6 +2,9 @@ package com.bobocode.intro;
 
 import com.bobocode.util.ExerciseNotCompletedException;
 
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
 /**
  * Welcome! This is an introduction exercise that will show you a simple example of Bobocode exercises.
  * <p>
@@ -41,6 +44,7 @@ public class ExerciseIntroduction {
      */
     public String encodeMessage(String message) {
         // todo: switch to branch "completed" in order to see how it should be implemented
-        throw new ExerciseNotCompletedException();
+        return Base64.getEncoder().encodeToString(message.getBytes(StandardCharsets.UTF_8));
+//        throw new ExerciseNotCompletedException();
     }
 }
