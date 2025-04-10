@@ -26,9 +26,7 @@ public class ExerciseIntroduction {
      * @return "The key to efficient learning is practice!"
      */
     public String getWelcomeMessage() {
-        // todo: implement a method and return a message according to javadoc
         return "The key to efficient learning is practice!";
-//        throw new ExerciseNotCompletedException();
     }
 
     /**
@@ -43,8 +41,6 @@ public class ExerciseIntroduction {
      * @return encoded message
      */
     public String encodeMessage(String message) {
-        // todo: switch to branch "completed" in order to see how it should be implemented
         return Base64.getEncoder().encodeToString(message.getBytes(StandardCharsets.UTF_8));
-//        throw new ExerciseNotCompletedException();
     }
 }
